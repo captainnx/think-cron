@@ -2,7 +2,7 @@
 
 ## 安装方法
 ```
-composer require yunwuxin/think-cron
+composer require captainnx/think-cron
 ```
 
 ## 使用方法
