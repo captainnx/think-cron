@@ -1,11 +1,11 @@
 {
-    "name": "yunwuxin/think-cron",
+    "name": "captainnx/think-cron",
     "description": "计划任务",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "yunwuxin",
-            "email": "448901948@qq.com"
+            "name": "captainnx",
+            "email": "captain.nx@qq.com"
         }
     ],
     "require": {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "yunwuxin\\cron\\": "src/cron"
+            "captainnx\\cron\\": "src/cron"
         }
     },
     "extra": {
@@ -25,7 +25,7 @@
                 "cron": "src/config.php"
             },
             "services": [
-                "yunwuxin\\cron\\Service"
+                "captainnx\\cron\\Service"
             ]
         }
     }
