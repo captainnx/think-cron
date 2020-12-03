@@ -43,11 +43,12 @@ abstract class Task
 
     /**
      * 是否到期执行
+     * @param null $date
      * @return bool
      */
-    public function isDue()
+    public function isDue($date = null)
     {
-        $date = Carbon::now($this->timezone);
+        $date = $date ?: Carbon::now($this->timezone);
 
         return CronExpression::factory($this->expression)->isDue($date->toDateTimeString());
     }
