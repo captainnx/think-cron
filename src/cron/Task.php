@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Closure;
 use Cron\CronExpression;
 use DateTimeZone;
+use think\Exception;
 use think\Cache;
 
 abstract class Task
@@ -77,6 +78,8 @@ abstract class Task
 
         try {
             $this->execute();
+        } catch(Exception $e){
+            
         } finally {
             $this->removeMutex();
         }
