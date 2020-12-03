@@ -29,7 +29,7 @@ class Run extends Command
 
                 /** @var Task $task */
                 $task = $this->app->invokeClass($taskClass);
-                if ($task->isDue()) {
+                if ($task->isDue($this->startedAt)) {
 
                     if (!$task->filtersPass()) {
                         continue;
